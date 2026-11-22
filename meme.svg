@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="LEONIDA WORLD theme park ticket: waited 4,811 days in line for Grand Theft Auto VI">
+  <title>LEONIDA WORLD — ADMIT ONE</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffcf6e"/>
+      <stop offset="0.45" stop-color="#ff7a6b"/>
+      <stop offset="0.8" stop-color="#c94b8a"/>
+      <stop offset="1" stop-color="#6b2d8f"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2ec4b6"/>
+      <stop offset="1" stop-color="#0b6e8f"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf4"/>
+      <stop offset="1" stop-color="#ffefc4"/>
+    </linearGradient>
+    <clipPath id="ticketClip">
+      <rect x="80" y="90" width="920" height="900" rx="26"/>
+    </clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.45  0 0 0 0 0.30  0 0 0 0.05 0"/>
+    </filter>
+    <path id="stampTop" d="M -46 0 A 46 46 0 0 1 46 0" fill="none"/>
+    <path id="stampBot" d="M -46 0 A 46 46 0 0 0 46 0" fill="none"/>
+  </defs>
+
+  <!-- Florida sunset backdrop -->
+  <rect width="1080" height="1080" fill="url(#sky)"/>
+  <circle cx="950" cy="52" r="72" fill="#ffe9a8" stroke="#191419" stroke-width="6"/>
+  <g fill="#ffffff" opacity="0.85">
+    <ellipse cx="180" cy="42" rx="52" ry="16"/>
+    <ellipse cx="220" cy="32" rx="38" ry="13"/>
+    <ellipse cx="560" cy="28" rx="46" ry="13"/>
+    <ellipse cx="600" cy="38" rx="32" ry="10"/>
+  </g>
+  <g stroke="#3d1a5e" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M470 52 q9 -9 18 0 q9 -9 18 0"/>
+    <path d="M540 66 q8 -8 16 0 q8 -8 16 0"/>
+  </g>
+  <rect x="0" y="930" width="1080" height="150" fill="url(#sea)"/>
+
+  <!-- Vice City skyline along the bottom -->
+  <g fill="#3d1a5e">
+    <rect x="300" y="1020" width="60" height="60"/>
+    <rect x="370" y="1000" width="50" height="80"/>
+    <rect x="430" y="1030" width="70" height="50"/>
+    <rect x="510" y="990" width="55" height="90"/>
+    <rect x="575" y="1025" width="65" height="55"/>
+    <rect x="650" y="1005" width="50" height="75"/>
+    <rect x="710" y="1035" width="80" height="45"/>
+    <rect x="800" y="1010" width="55" height="70"/>
+    <rect x="865" y="1030" width="60" height="50"/>
+    <rect x="935" y="1015" width="45" height="65"/>
+  </g>
+  <line x1="537" y1="990" x2="537" y2="962" stroke="#3d1a5e" stroke-width="5"/>
+  <circle cx="537" cy="958" r="5" fill="#c41c83"/>
+  <g fill="#ffd76a" opacity="0.9">
+    <rect x="382" y="1012" width="7" height="9"/><rect x="398" y="1030" width="7" height="9"/>
+    <rect x="522" y="1002" width="7" height="9"/><rect x="540" y="1022" width="7" height="9"/>
+    <rect x="662" y="1018" width="7" height="9"/><rect x="812" y="1022" width="7" height="9"/>
+  </g>
+
+  <!-- Roller coaster peeking over the ticket's top-left corner -->
+  <g stroke="#3d1a5e" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M -10 132 C 80 18, 160 8, 212 58 S 330 112, 425 28"/>
+    <circle cx="212" cy="52" r="27"/>
+    <line x1="100" y1="62" x2="100" y2="96"/>
+    <line x1="330" y1="82" x2="330" y2="96"/>
+  </g>
+  <g>
+    <rect x="292" y="42" width="36" height="17" rx="5" fill="#c41c83" stroke="#191419" stroke-width="3"/>
+    <circle cx="300" cy="62" r="4" fill="#191419"/>
+    <circle cx="320" cy="62" r="4" fill="#191419"/>
+  </g>
+
+  <!-- Ferris wheel peeking out bottom-right -->
+  <g stroke="#3d1a5e" stroke-width="6" fill="none">
+    <circle cx="1020" cy="1000" r="120"/>
+    <circle cx="1020" cy="1000" r="30"/>
+    <line x1="1020" y1="880" x2="1020" y2="1120"/>
+    <line x1="900" y1="1000" x2="1140" y2="1000"/>
+    <line x1="935" y1="915" x2="1105" y2="1085"/>
+    <line x1="1105" y1="915" x2="935" y2="1085"/>
+  </g>
+  <g fill="#c41c83" stroke="#191419" stroke-width="3">
+    <circle cx="1020" cy="880" r="10"/><circle cx="1105" cy="915" r="10"/>
+    <circle cx="1140" cy="1000" r="10"/><circle cx="1105" cy="1085" r="10"/>
+    <circle cx="1020" cy="1120" r="10"/><circle cx="935" cy="1085" r="10"/>
+    <circle cx="900" cy="1000" r="10"/><circle cx="935" cy="915" r="10"/>
+  </g>
+
+  <!-- Palm tree bottom-left -->
+  <g stroke="#3d1a5e" stroke-width="11" stroke-linecap="round" fill="none">
+    <path d="M58 1080 Q 52 1012 74 962"/>
+    <path d="M74 962 Q 40 930 4 928"/>
+    <path d="M74 962 Q 66 918 44 896"/>
+    <path d="M74 962 Q 92 916 122 902"/>
+    <path d="M74 962 Q 108 936 142 938"/>
+    <path d="M74 962 Q 78 922 92 896"/>
+  </g>
+  <circle cx="66" cy="966" r="9" fill="#3d1a5e"/>
+  <circle cx="84" cy="970" r="9" fill="#3d1a5e"/>
+
+  <!-- Ticket body -->
+  <rect x="80" y="90" width="920" height="900" rx="26" fill="url(#paper)" stroke="#191419" stroke-width="6"/>
+  <rect x="80" y="90" width="920" height="900" filter="url(#grain)" clip-path="url(#ticketClip)"/>
+  <!-- punched notches where the perforation meets the ticket edge -->
+  <circle cx="300" cy="90" r="15" fill="#ffcf6e"/>
+  <circle cx="300" cy="990" r="15" fill="#1fa8a0"/>
+  <g clip-path="url(#ticketClip)">
+    <rect x="80" y="90" width="920" height="170" fill="#c41c83"/>
+    <rect x="80" y="260" width="920" height="6" fill="#ffd76a"/>
+  </g>
+  <!-- Header -->
+  <text x="540" y="196" text-anchor="middle" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="88" font-weight="900" fill="#fff8e7" letter-spacing="2">LEONIDA WORLD</text>
+  <text x="540" y="240" text-anchor="middle" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="28" font-weight="700" fill="#ffd76a" letter-spacing="6">★ ADMIT ONE ★ VICE CITY, LEONIDA ★</text>
+
+  <!-- Perforation + stub -->
+  <line x1="300" y1="274" x2="300" y2="976" stroke="#b9a06a" stroke-width="4" stroke-dasharray="2 14" stroke-linecap="round"/>
+  <text transform="rotate(-90 180 640)" x="180" y="640" text-anchor="middle" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="44" font-weight="900" fill="#c41c83" letter-spacing="12">ADMIT ONE</text>
+  <text transform="rotate(-90 232 640)" x="232" y="640" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="24" font-weight="700" fill="#5a4632" letter-spacing="4">No. 004811</text>
+  <text transform="rotate(-90 128 640)" x="128" y="640" text-anchor="middle" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#5a4632" letter-spacing="6">LEONIDA WORLD</text>
+
+  <!-- Round ADMIT ONE stamp on the stub -->
+  <g transform="translate(190 365) rotate(-12)" opacity="0.92">
+    <circle r="58" fill="none" stroke="#c41c83" stroke-width="5"/>
+    <circle r="46" fill="none" stroke="#c41c83" stroke-width="2.5"/>
+    <text font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="19" font-weight="900" fill="#c41c83" letter-spacing="2">
+      <textPath href="#stampTop" startOffset="50%" text-anchor="middle">★ ADMIT ONE ★</textPath>
+    </text>
+    <text font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="14" font-weight="700" fill="#c41c83" letter-spacing="1">
+      <textPath href="#stampBot" startOffset="50%" text-anchor="middle">LEONIDA WORLD</textPath>
+    </text>
+    <path d="M0 -16 L4.5 -4.5 L16 0 L4.5 4.5 L0 16 L-4.5 4.5 L-16 0 L-4.5 -4.5 Z" fill="#c41c83"/>
+  </g>
+
+  <!-- Barcode on the stub -->
+  <g fill="#191419">
+    <rect x="105" y="890" width="5" height="60"/><rect x="114" y="890" width="2" height="60"/>
+    <rect x="120" y="890" width="7" height="60"/><rect x="131" y="890" width="3" height="60"/>
+    <rect x="138" y="890" width="4" height="60"/><rect x="146" y="890" width="2" height="60"/>
+    <rect x="152" y="890" width="6" height="60"/><rect x="162" y="890" width="3" height="60"/>
+    <rect x="169" y="890" width="2" height="60"/><rect x="175" y="890" width="5" height="60"/>
+    <rect x="184" y="890" width="4" height="60"/><rect x="192" y="890" width="2" height="60"/>
+    <rect x="198" y="890" width="7" height="60"/><rect x="209" y="890" width="3" height="60"/>
+    <rect x="216" y="890" width="5" height="60"/><rect x="225" y="890" width="2" height="60"/>
+    <rect x="231" y="890" width="4" height="60"/><rect x="239" y="890" width="3" height="60"/>
+    <rect x="246" y="890" width="6" height="60"/><rect x="256" y="890" width="2" height="60"/>
+  </g>
+  <text x="190" y="972" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="19" font-weight="700" fill="#191419">4 811 2013 2026</text>
+
+  <!-- Itemized lines -->
+  <text x="330" y="305" font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="36" font-weight="700" fill="#191419">RIDE: GRAND THEFT AUTO VI</text>
+  <text x="330" y="365" font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="36" font-weight="700" fill="#191419">PURCHASED: 17 SEPT 2013</text>
+  <text x="330" y="425" font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="36" font-weight="700" fill="#191419">PRICE: $59.99 — PAID IN FULL</text>
+  <text x="330" y="485" font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="38" font-weight="700" fill="#c41c83">QUEUE TIME: 4,811 DAYS</text>
+  <line x1="330" y1="515" x2="970" y2="515" stroke="#b9a06a" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <!-- The joke, large — hero line on a gold highlight -->
+  <rect x="320" y="612" width="640" height="92" fill="#ffd76a" opacity="0.55"/>
+  <text x="330" y="588" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="50" font-weight="900" fill="#191419">YOU WAITED IN LINE</text>
+  <text x="330" y="690" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="98" font-weight="900" fill="#c41c83">4,811 DAYS</text>
+  <text x="330" y="752" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="40" font-weight="900" fill="#191419">THIS RIDE IS FINALLY OPEN</text>
+  <line x1="330" y1="782" x2="970" y2="782" stroke="#b9a06a" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <!-- Park mascot: the make.fun ghost, standing on the ticket holding its star coin -->
+  <g transform="translate(800 825) scale(6)">
+    <g transform="translate(3.858 3.202) scale(0.79)">
+      <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#191419" stroke="#191419" stroke-width="3.4" stroke-linejoin="round"/>
+      <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#ffffff"/>
+      <path d="M6.3 24.1v-2.5m8 5.8v-1.5" fill="none" stroke="#191419" stroke-width="1.25" stroke-linecap="round"/>
+      <path d="M13.2 10.6Q13.632 11.968 15 12.4Q13.632 12.832 13.2 14.2Q12.768 12.832 11.4 12.4Q12.768 11.968 13.2 10.6z" fill="#191419"/>
+      <path d="M19.3 9.8Q19.732 11.168 21.1 11.6Q19.732 12.032 19.3 13.4Q18.868 12.032 17.5 11.6Q18.868 11.168 19.3 9.8z" fill="#191419"/>
+      <circle cx="26.5" cy="13.4" r="5.5" fill="#191419"/>
+      <circle cx="26.5" cy="13.4" r="3.8" fill="#c41c83"/>
+      <path d="M26.926 11.395L27.154 12.811L28.539 13.186L27.262 13.84L27.334 15.273L26.317 14.261L24.977 14.772L25.625 13.492L24.725 12.375L26.142 12.596z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+      <circle cx="24.9" cy="19.6" r="4" fill="#191419"/>
+      <circle cx="24.9" cy="19.6" r="2.3" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- Agent-pays pitch, big and plain -->
+  <text x="330" y="872" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="33" font-weight="900" fill="#191419">PAID BY MY AI AGENT —</text>
+  <text x="330" y="920" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="33" font-weight="900" fill="#c41c83">IT WINS REAL MONEY</text>
+  <text x="330" y="968" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-size="33" font-weight="900" fill="#191419">ON <tspan fill="#c41c83">make.fun</tspan></text>
+</svg>
