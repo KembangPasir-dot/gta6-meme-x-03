@@ -20,20 +20,42 @@ import { join } from 'node:path';
 const BOT_DIR = process.env.MAKEFUN_BOT_DIR ?? '/bot';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-const source = join(BOT_DIR, 'POST.json');
-const target = join(OUTPUT_DIR, 'POST.json');
-
-if (!existsSync(source)) {
-  console.error(`POST.json not found in ${BOT_DIR}`);
+// Fail loudly with a plain message and a non-zero exit when the entry's
+// post address cannot be carried over; a silent or partial copy would
+// leave the gate with nothing to check.
+function fail(message) {
+  console.error(message);
   process.exit(1);
 }
 
-const parsed = JSON.parse(readFileSync(source, 'utf8'));
-if (typeof parsed.url !== 'string' || parsed.url.length === 0) {
-  console.error('POST.json has no url string');
-  process.exit(1);
+// Read POST.json and return its url, after checking it is a non-empty
+// string. The gate only accepts a real post address, so anything else
+// here is a broken entry, not something to copy through.
+function readPostUrl(source) {
+  if (!existsSync(source)) {
+    fail(`POST.json not found: looked for ${source} (MAKEFUN_BOT_DIR=${BOT_DIR})`);
+  }
+  let parsed;
+  try {
+    parsed = JSON.parse(readFileSync(source, 'utf8'));
+  } catch {
+    fail(`POST.json in ${BOT_DIR} is not valid JSON`);
+  }
+  if (typeof parsed.url !== 'string' || parsed.url.length === 0) {
+    fail('POST.json has no url string: expected {"url": "<https://x.com/.../status/...>"}');
+  }
+  return parsed.url;
 }
 
-mkdirSync(OUTPUT_DIR, { recursive: true });
-copyFileSync(source, target);
-console.log(`Copied POST.json to ${target}`);
+// Copy POST.json byte for byte into the output directory, so the address
+// the gate reads is exactly the address committed in the repository.
+function copyPost() {
+  const source = join(BOT_DIR, 'POST.json');
+  const target = join(OUTPUT_DIR, 'POST.json');
+  readPostUrl(source);
+  mkdirSync(OUTPUT_DIR, { recursive: true });
+  copyFileSync(source, target);
+  console.log(`Copied POST.json to ${target}`);
+}
+
+copyPost();
